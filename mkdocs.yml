@@ -10,11 +10,13 @@ theme:
     - navigation.instant
 
 nav:
-  - Accueil: index.md
-  - Intégrales:
-      - Théorèmes de base: integrales.md
-  - Séries:
-      - Séries numériques: series.md
+  - Home: README.md
+  - English:
+    - Proofs:
+      - Equivalence of Norms in Finite-Dimensional Spaces: en/Proofs/equivalence_norms_finite-dimensional_spaces.md
+  - Français:
+    - Démonstrations:
+      - Equivalence des normes en dimension fini: fr/Démonstrations/equivalence_normes_dimension_finie.md
 
 markdown_extensions:
   - admonition
