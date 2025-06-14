@@ -1,1 +1,32 @@
-site_name: My Docs
+site_name: The Recurse Maths
+site_description: Un recueil clair et structuré de preuves mathématiques
+site_author: anthkrg
+theme:
+  name: material
+  language: en
+  palette:
+    primary: teal
+  features:
+    - navigation.instant
+
+nav:
+  - Accueil: index.md
+  - Intégrales:
+      - Théorèmes de base: integrales.md
+  - Séries:
+      - Séries numériques: series.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
