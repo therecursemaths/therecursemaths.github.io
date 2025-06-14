@@ -135,6 +135,16 @@ Please clearly describe any new feature or change in your PR 🙏
 **Anthony KOUROGHLI (antkrg)** 💙  
 *(Hopefully more contributors to come 🤞)*
 
+---
+
+### 📬 Contact
+
+For any questions, suggestions, or contributions, feel free to reach out at:
+
+✉️ [therecursemaths@gmail.com](mailto:therecursemaths@gmail.com)
+
+---
+
 
 
 
@@ -267,6 +277,14 @@ Merci d’indiquer clairement dans la PR ce que vous avez ajouté ou modifié �
 
 **Anthony KOUROGHLI (antkrg)** 💙  
 *(D’autres personnes à venir, je l’espère 🤞)*
+
+---
+
+### 📬 Contact
+
+Pour toute question, suggestion ou contribution, vous pouvez me contacter à l'adresse suivante :
+
+✉️ [therecursemaths@gmail.com](mailto:therecursemaths@gmail.com)
 
 ---
 
