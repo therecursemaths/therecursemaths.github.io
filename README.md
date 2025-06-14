@@ -3,7 +3,7 @@
 
 :fr: [Français](#français) | :uk: [English](#english)
 
-## [Willkommen, Bienvenue, Welcome!](https://www.youtube.com/watch?v=IqeMMN6aeJE)
+## [Willkommen, Bienvenue, Welcome! (Click Me !)](https://www.youtube.com/watch?v=IqeMMN6aeJE)
 
 
 ## English
@@ -22,7 +22,7 @@ This site was born from the passion of someone eager to share their knowledge ab
 
 🔗 [TheRecurseMaths](https://github.com/therecursemaths/therecursemaths.github.io)
 
-🖼️ *(screenshot or preview to be added here)*
+🖼️ *![Alt text](docs/img/TheRecurseMaths.png "index.md")*
 
 ---
 
@@ -155,7 +155,7 @@ Ce site est né de la volonté d'un passionné de partager ses connaissances sur
 
 🔗 [TheRecurseMaths](https://github.com/therecursemaths/therecursemaths.github.io)
 
-🖼️ *(capture d'écran ou aperçu à ajouter ici)*
+🖼️ *![Alt text](docs/img/TheRecurseMaths.png "index.md")*
 
 ---
 
