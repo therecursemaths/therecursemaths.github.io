@@ -2,7 +2,7 @@
 **author: Anthony KOUROGHLI (anthkrg)**
 
 
-🇫🇷 [Français](#français) | 🇬🇧 [English](#english)
+🇫🇷 [Français](#francais) | 🇬🇧 [English](#english)
 
 ## [Willkommen, Bienvenue, Welcome! (Click Me !)](https://www.youtube.com/watch?v=IqeMMN6aeJE)
 
