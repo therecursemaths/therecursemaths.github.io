@@ -1,0 +1,38 @@
+site_name: The Recurse Maths
+site_description: Deep into 
+site_author: Anthony KOUROGHLI (anthkrg)
+
+site_url: https://therecursemaths.github.io 
+
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: teal
+  features:
+    - navigation.instant
+
+nav:
+  - Home: README.md
+  - English:
+    - Proofs:
+      - Equivalence of Norms in Finite-Dimensional Spaces: en/Proofs/equivalence_norms_finite-dimensional_spaces.md
+  - Français:
+    - Démonstrations:
+      - Equivalence des normes en dimension fini: fr/Démonstrations/equivalence_normes_dimension_finie.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
