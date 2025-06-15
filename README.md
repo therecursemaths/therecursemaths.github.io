@@ -1,7 +1,7 @@
 # The Recurse Maths
 **author: Anthony KOUROGHLI (anthkrg)**
 
-:fr: [Français](#français) | :uk: [English](#english)
+🇫🇷 [Français](#français) | 🇬🇧 [English](#english)
 
 ## [Willkommen, Bienvenue, Welcome! (Click Me !)](https://www.youtube.com/watch?v=IqeMMN6aeJE)
 
