@@ -24,6 +24,9 @@ jobs:
       - name: 📦 Install dependencies
         run: pip install mkdocs mkdocs-material pymdown-extensions
 
+      - name: 🛠️ Clean old site files
+        run: rm -rf site/*
+
       - name: 🛠️ Build the site
         run: mkdocs build --clean
 
