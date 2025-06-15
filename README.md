@@ -21,7 +21,7 @@ This site was born from the passion of someone eager to share their knowledge ab
 
 ### 🌐 Website Preview
 
-🔗 [TheRecurseMaths](https://github.com/therecursemaths/therecursemaths.github.io)
+🔗 [GitHub TheRecurseMaths](https://github.com/therecursemaths/therecursemaths.github.io)
 
 🖼️ *![Alt text](docs/img/TheRecurseMaths.png "index.md")*
 
@@ -43,20 +43,20 @@ This site was born from the passion of someone eager to share their knowledge ab
 
 To run the project locally (and maybe contribute ✍️), follow these steps:
 
-1. Create a Python virtual environment :white_check_mark:
+1. Create a Python virtual environment ✅
 
 ```bash
 python -m venv myvenv
 source myvenv/bin/activate
 ```
 
-2. Install the necessary packages :white_check_mark:
+2. Install the necessary packages ✅
 
 ```bash
 pip install mkdocs mkdocs-material pymdown-extensions
 ```
 
-3. Verify the installation :white_check_mark:
+1. Verify the installation ✅
 
 ```bash
 mkdocs --version
@@ -162,7 +162,7 @@ Ce site est né de la volonté d'un passionné de partager ses connaissances sur
 
 ### 🌐 Aperçu du site
 
-🔗 [TheRecurseMaths](https://github.com/therecursemaths/therecursemaths.github.io)
+🔗 [GitHub TheRecurseMaths](https://github.com/therecursemaths/therecursemaths.github.io)
 
 🖼️ *![Alt text](docs/img/TheRecurseMaths.png "index.md")*
 
@@ -184,20 +184,20 @@ Ce site est né de la volonté d'un passionné de partager ses connaissances sur
 
 Pour installer localement le projet (et pourquoi pas y contribuer ✍️), voici les étapes à suivre :
 
-1. Créer un environnement virtuel Python :white_check_mark:
+1. Créer un environnement virtuel Python ✅
 
 ```bash
 python -m venv myvenv
 source myvenv/bin/activate
 ```
 
-2. Installer les dépendances nécessaires :white_check_mark:
+2. Installer les dépendances nécessaires ✅
 
 ```bash
 pip install mkdocs mkdocs-material pymdown-extensions
 ```
 
-3. Vérifier que tout est bien installé :white_check_mark:
+3. Vérifier que tout est bien installé ✅
 
 ```bash
 mkdocs --version
