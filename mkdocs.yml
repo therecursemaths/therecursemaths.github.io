@@ -14,7 +14,7 @@ theme:
     - navigation.instant
 
 nav:
-  - Home: README.md
+  - Home: index.md
   - English:
     - Proofs:
       - Equivalence of Norms in Finite-Dimensional Spaces: en/Proofs/equivalence_norms_finite-dimensional_spaces.md
@@ -29,7 +29,6 @@ markdown_extensions:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.superfences
   - pymdownx.betterem
   - pymdownx.inlinehilite
   - pymdownx.snippets
