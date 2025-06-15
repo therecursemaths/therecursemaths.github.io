@@ -1,0 +1,1315 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Deep into">
+      
+      
+        <meta name="author" content="Anthony KOUROGHLI (anthkrg)">
+      
+      
+        <link rel="canonical" href="https://therecursemaths.github.io/">
+      
+      
+      
+        <link rel="next" href="en/Proofs/equivalence_norms_finite-dimensional_spaces/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>The Recurse Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-recurse-maths" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="The Recurse Maths" class="md-header__button md-logo" aria-label="The Recurse Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Recurse Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="The Recurse Maths" class="md-nav__button md-logo" aria-label="The Recurse Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The Recurse Maths
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#willkommen-bienvenue-welcome-click-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      Willkommen, Bienvenue, Welcome! (Click Me !)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#english" class="md-nav__link">
+    <span class="md-ellipsis">
+      English
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="English">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Introduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#website-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Website Preview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-setup-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Local Setup (Linux)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Local Setup (Linux)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Project Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ Running Locally
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 License
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thanks-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      👊 Thanks to
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      📬 Contact
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#francais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Français
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Français">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Introduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apercu-du-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Aperçu du site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonctionnalites" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Fonctionnalités
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-locale-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Installation locale (Linux)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Installation locale (Linux)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependances" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Dépendances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-du-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Structure du projet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lancer-le-projet-en-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ Lancer le projet en local
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploiement" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Déploiement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribuer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribuer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licence" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Licence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remerciements" class="md-nav__link">
+    <span class="md-ellipsis">
+      👊 Remerciements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📬 Contact
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    English
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            English
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Proofs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Proofs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/Proofs/equivalence_norms_finite-dimensional_spaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Equivalence of Norms in Finite-Dimensional Spaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Français
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Français
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Démonstrations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Démonstrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/D%C3%A9monstrations/equivalence_normes_dimension_finie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Equivalence des normes en dimension fini
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#willkommen-bienvenue-welcome-click-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      Willkommen, Bienvenue, Welcome! (Click Me !)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#english" class="md-nav__link">
+    <span class="md-ellipsis">
+      English
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="English">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Introduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#website-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Website Preview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-setup-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Local Setup (Linux)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Local Setup (Linux)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Project Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ Running Locally
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 License
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thanks-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      👊 Thanks to
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      📬 Contact
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#francais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Français
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Français">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Introduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apercu-du-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Aperçu du site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonctionnalites" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Fonctionnalités
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-locale-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Installation locale (Linux)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Installation locale (Linux)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependances" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Dépendances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-du-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Structure du projet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lancer-le-projet-en-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ Lancer le projet en local
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploiement" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Déploiement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribuer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribuer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licence" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Licence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remerciements" class="md-nav__link">
+    <span class="md-ellipsis">
+      👊 Remerciements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📬 Contact
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="the-recurse-maths">The Recurse Maths<a class="headerlink" href="#the-recurse-maths" title="Permanent link">&para;</a></h1>
+<p><strong>author: Anthony KOUROGHLI (anthkrg)</strong></p>
+<p>🇫🇷 <a href="#français">Français</a> | 🇬🇧 <a href="#english">English</a></p>
+<h2 id="willkommen-bienvenue-welcome-click-me"><a href="https://www.youtube.com/watch?v=IqeMMN6aeJE">Willkommen, Bienvenue, Welcome! (Click Me !)</a><a class="headerlink" href="#willkommen-bienvenue-welcome-click-me" title="Permanent link">&para;</a></h2>
+<h2 id="english">English<a class="headerlink" href="#english" title="Permanent link">&para;</a></h2>
+<h3 id="introduction">📘 Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
+<p><strong>TheRecurseMaths</strong> is a website where you’ll find complex mathematical proofs. It is available in both <strong>French</strong> 🇫🇷 and <strong>English</strong> 🇬🇧. Maintainers aim to ensure that every contribution is available in both languages (see <a href="#contributing">🧑‍💻 Contributing</a>).</p>
+<p>The concept is simple: dive in (and get lost, maybe? 😜) through clickable links on each page that lead you deeper and deeper into the world of mathematics.</p>
+<p>This site was born from the passion of someone eager to share their knowledge about the power and beauty of mathematics — and, let's be honest, to give a helping hand to his cousin who's diving straight into it 😄.</p>
+<hr />
+<h3 id="website-preview">🌐 Website Preview<a class="headerlink" href="#website-preview" title="Permanent link">&para;</a></h3>
+<p>🔗 <a href="https://github.com/therecursemaths/therecursemaths.github.io">TheRecurseMaths</a></p>
+<p>🖼️ <em><img alt="Alt text" src="../img/TheRecurseMaths.png" title="index.md" /></em></p>
+<hr />
+<h3 id="features">🛠️ Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clear and intuitive navigation on the left side of each page 🧭  </li>
+<li>Pages grouped by topic in dedicated folders 📂  </li>
+<li>Proofs written in <strong>LaTeX</strong> using <strong>MathJax</strong> 🧮  </li>
+<li>Static site generated with <strong>MkDocs</strong> ⚙️  </li>
+<li>Automatic deployment via <strong>GitHub Pages</strong> 🚀</li>
+</ul>
+<hr />
+<h3 id="local-setup-linux">💻 Local Setup (Linux)<a class="headerlink" href="#local-setup-linux" title="Permanent link">&para;</a></h3>
+<h4 id="dependencies">📦 Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h4>
+<p>To run the project locally (and maybe contribute ✍️), follow these steps:</p>
+<ol>
+<li>Create a Python virtual environment :white_check_mark:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>myvenv
+<span class="nb">source</span><span class="w"> </span>myvenv/bin/activate
+</code></pre></div>
+<ol>
+<li>Install the necessary packages :white_check_mark:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>pymdown-extensions
+</code></pre></div>
+<ol>
+<li>Verify the installation :white_check_mark:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>--version
+</code></pre></div>
+<hr />
+<h4 id="project-structure">📁 Project Structure<a class="headerlink" href="#project-structure" title="Permanent link">&para;</a></h4>
+<p>The <code>docs/</code> folder contains all the <code>.md</code> pages that are converted into a static site by <code>mkdocs</code>.</p>
+<p>At the root of the project, you'll also find the <code>README.md</code> file (this one), which summarizes everything you need to know about the project and how to contribute.</p>
+<hr />
+<h4 id="running-locally">▶️ Running Locally<a class="headerlink" href="#running-locally" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Clone the repository:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/therecursemaths/therecursemaths.github.io
+</code></pre></div>
+<ol>
+<li>Navigate to the project folder:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>therecursemaths.github.io
+</code></pre></div>
+<ol>
+<li>Start the local development server:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+<ol>
+<li>Open your browser and go to:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:8000
+</code></pre></div>
+<p>🎉 The site should now be visible!</p>
+<hr />
+<h3 id="deployment">🚀 Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
+<p>The site is automatically deployed via <strong>GitHub Actions</strong> (CI/CD pipeline).<br />
+Each time a <strong>pull request is approved</strong>, the site is rebuilt and published to GitHub Pages.</p>
+<p>This ensures that each contribution is live as soon as it’s accepted ✅</p>
+<hr />
+<h3 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h3>
+<p>The contribution workflow is simple:</p>
+<p>🔁 <strong>Fork → Branch → Pull Request</strong></p>
+<ol>
+<li>Fork the original repository  </li>
+<li>Create a branch for your feature or fix (<code>feature/...</code>)  </li>
+<li>Open a well-documented <strong>Pull Request</strong> 📝</li>
+</ol>
+<p>Please clearly describe any new feature or change in your PR 🙏</p>
+<hr />
+<h3 id="license">📄 License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h3>
+<p>🧠 Still deciding...</p>
+<hr />
+<h3 id="thanks-to">👊 Thanks to<a class="headerlink" href="#thanks-to" title="Permanent link">&para;</a></h3>
+<p><strong>Anthony KOUROGHLI (antkrg)</strong> 💙<br />
+<em>(Hopefully more contributors to come 🤞)</em></p>
+<hr />
+<h3 id="contact">📬 Contact<a class="headerlink" href="#contact" title="Permanent link">&para;</a></h3>
+<p>For any questions, suggestions, or contributions, feel free to reach out at:</p>
+<p>✉️ <a href="mailto:therecursemaths@gmail.com">therecursemaths@gmail.com</a></p>
+<hr />
+<h2 id="francais">Français<a class="headerlink" href="#francais" title="Permanent link">&para;</a></h2>
+<h3 id="introduction_1">📘 Introduction<a class="headerlink" href="#introduction_1" title="Permanent link">&para;</a></h3>
+<p><strong>TheRecurseMaths</strong> est un site sur lequel vous pourrez explorer des démonstrations mathématiques complexes. Il est disponible en <strong>français</strong> 🇫🇷 et en <strong>anglais</strong> 🇬🇧. Les mainteneurs feront également de leur mieux pour que chaque contribution soit disponible dans les deux langues (voir section <a href="#contribuer">🧑‍💻 Contribuer</a>).</p>
+<p>Le principe est simple : plongez (et perdez-vous peut-être ? 😜) à travers des liens cliquables sur chaque page, qui vous mèneront toujours plus profondément dans l'univers fascinant des mathématiques.</p>
+<p>Ce site est né de la volonté d'un passionné de partager ses connaissances sur la puissance et la beauté de cette discipline. Et aussi, disons-le franchement, de donner un coup de main à son cousin qui fonce tête baissée dans ce monde magique 😄.</p>
+<hr />
+<h3 id="apercu-du-site">🌐 Aperçu du site<a class="headerlink" href="#apercu-du-site" title="Permanent link">&para;</a></h3>
+<p>🔗 <a href="https://github.com/therecursemaths/therecursemaths.github.io">TheRecurseMaths</a></p>
+<p>🖼️ <em><img alt="Alt text" src="../img/TheRecurseMaths.png" title="index.md" /></em></p>
+<hr />
+<h3 id="fonctionnalites">🛠️ Fonctionnalités<a class="headerlink" href="#fonctionnalites" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Navigation claire et fluide sur la gauche de chaque page 🧭  </li>
+<li>Pages organisées par thématique dans des dossiers dédiés 📂  </li>
+<li>Démonstrations écrites en <strong>LaTeX</strong> via <strong>MathJax</strong> 🧮  </li>
+<li>Site généré statiquement avec <strong>MkDocs</strong> ⚙️  </li>
+<li>Déploiement automatique via <strong>GitHub Pages</strong> 🚀</li>
+</ul>
+<hr />
+<h3 id="installation-locale-linux">💻 Installation locale (Linux)<a class="headerlink" href="#installation-locale-linux" title="Permanent link">&para;</a></h3>
+<h4 id="dependances">📦 Dépendances<a class="headerlink" href="#dependances" title="Permanent link">&para;</a></h4>
+<p>Pour installer localement le projet (et pourquoi pas y contribuer ✍️), voici les étapes à suivre :</p>
+<ol>
+<li>Créer un environnement virtuel Python :white_check_mark:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>myvenv
+<span class="nb">source</span><span class="w"> </span>myvenv/bin/activate
+</code></pre></div>
+<ol>
+<li>Installer les dépendances nécessaires :white_check_mark:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>pymdown-extensions
+</code></pre></div>
+<ol>
+<li>Vérifier que tout est bien installé :white_check_mark:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>--version
+</code></pre></div>
+<hr />
+<h4 id="structure-du-projet">📁 Structure du projet<a class="headerlink" href="#structure-du-projet" title="Permanent link">&para;</a></h4>
+<p>Le dossier <code>docs/</code> contient toutes les pages <code>.md</code>, qui seront transformées en site statique par <code>mkdocs</code>.</p>
+<p>À la racine du projet, vous trouverez aussi le fichier <code>README.md</code> (celui-ci), qui résume tout ce qu’il faut savoir pour comprendre et contribuer au projet.</p>
+<hr />
+<h4 id="lancer-le-projet-en-local">▶️ Lancer le projet en local<a class="headerlink" href="#lancer-le-projet-en-local" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Cloner le dépôt :</li>
+</ol>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/therecursemaths/therecursemaths.github.io
+</code></pre></div>
+<ol>
+<li>Se placer dans le dossier du projet :</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>therecursemaths.github.io
+</code></pre></div>
+<ol>
+<li>Lancer le serveur local :</li>
+</ol>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+<ol>
+<li>Ouvrir votre navigateur à l’adresse suivante :</li>
+</ol>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:8000
+</code></pre></div>
+<p>🎉 Le site devrait s’afficher !</p>
+<hr />
+<h3 id="deploiement">🚀 Déploiement<a class="headerlink" href="#deploiement" title="Permanent link">&para;</a></h3>
+<p>Le déploiement du site est automatique grâce à <strong>GitHub Actions</strong> (pipeline CI/CD).<br />
+À chaque <strong>pull request validée</strong>, le site est reconstruit et publié sur GitHub Pages.</p>
+<p>Cela garantit que chaque contribution est disponible immédiatement après validation ✅</p>
+<hr />
+<h3 id="contribuer">Contribuer<a class="headerlink" href="#contribuer" title="Permanent link">&para;</a></h3>
+<p>Le workflow est simple :</p>
+<p>🔁 <strong>Fork → Branche → Pull Request</strong></p>
+<ol>
+<li>Forkez le dépôt original  </li>
+<li>Créez une branche pour votre fonctionnalité ou correction (<code>feature/...</code>)  </li>
+<li>Ouvrez une <strong>Pull Request</strong> bien documentée 📝</li>
+</ol>
+<p>Merci d’indiquer clairement dans la PR ce que vous avez ajouté ou modifié 🙏</p>
+<hr />
+<h3 id="licence">📄 Licence<a class="headerlink" href="#licence" title="Permanent link">&para;</a></h3>
+<p>🧠 Réflexion en cours...</p>
+<hr />
+<h3 id="remerciements">👊 Remerciements<a class="headerlink" href="#remerciements" title="Permanent link">&para;</a></h3>
+<p><strong>Anthony KOUROGHLI (antkrg)</strong> 💙<br />
+<em>(D’autres personnes à venir, je l’espère 🤞)</em></p>
+<hr />
+<h3 id="contact_1">📬 Contact<a class="headerlink" href="#contact_1" title="Permanent link">&para;</a></h3>
+<p>Pour toute question, suggestion ou contribution, vous pouvez me contacter à l'adresse suivante :</p>
+<p>✉️ <a href="mailto:therecursemaths@gmail.com">therecursemaths@gmail.com</a></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
