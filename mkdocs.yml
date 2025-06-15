@@ -1,6 +1,10 @@
 site_name: The Recurse Maths
-site_description: Un recueil clair et structuré de preuves mathématiques
-site_author: anthkrg
+site_description: Deep into 
+site_author: Anthony KOUROGHLI (anthkrg)
+
+site_url: https://therecursemaths.github.io 
+
+
 theme:
   name: material
   language: en
