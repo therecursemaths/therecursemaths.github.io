@@ -1,3 +1,4 @@
+// Configuration de MathJax
 window.MathJax = {
   tex: {
     inlineMath: [["\\(", "\\)"]],
@@ -11,11 +12,15 @@ window.MathJax = {
   }
 };
 
-document$.subscribe(() => { 
+// S'assurer que MathJax est initialisé après un changement de page instantané
+document.addEventListener('DOMContentLoaded', function () {
+  MathJax.typeset();  // Assure que MathJax fonctionne à chaque chargement de la page
+});
 
-
-  MathJax.startup.output.clearCache()
-  MathJax.typesetClear()
-  MathJax.texReset()
-  MathJax.typesetPromise()
-})
+// Si tu utilises pjax (pour les transitions instantanées de pages)
+document.addEventListener('pjax:end', function () {
+  MathJax.startup.output.clearCache();    // Vider le cache de MathJax
+  MathJax.typesetClear();                 // Effacer les typesets précédents
+  MathJax.texReset();                    // Réinitialiser MathJax pour qu'il soit prêt à traiter à nouveau
+  MathJax.typesetPromise();              // Appliquer MathJax sur la page après le changement
+});
