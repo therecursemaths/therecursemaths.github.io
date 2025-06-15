@@ -11,7 +11,7 @@ theme:
   palette:
     primary: teal
   features:
-    - navigation.instant
+    - navigation.instant: false
 
 nav:
   - Home: index.md
