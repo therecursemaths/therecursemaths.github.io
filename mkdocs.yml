@@ -2,7 +2,7 @@ site_name: The Recurse Maths
 site_description: Deep into 
 site_author: Anthony KOUROGHLI (anthkrg)
 
-site_url: https://therecursemaths.github.io 
+site_url: https://therecursemaths.github.io/
 
 
 theme:
