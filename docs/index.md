@@ -1,4 +1,4 @@
-# TheRecurseMaths
+# The Recurse Maths
 **author: Anthony KOUROGHLI (anthkrg)**
 
 
@@ -11,7 +11,7 @@
 
 ### 📘 Introduction
 
-**TheRecurseMaths** is a website where you’ll find complex mathematical proofs. It is available in both **French** 🇫🇷 and **English** 🇬🇧. Maintainers aim to ensure that every contribution is available in both languages (see [🧑‍💻 Contributing](#contributing)).
+**The Recurse Maths** is a website where you’ll find complex mathematical proofs. It is available in both **French** 🇫🇷 and **English** 🇬🇧. Maintainers aim to ensure that every contribution is available in both languages (see [🧑‍💻 Contributing](#contributing)).
 
 The concept is simple: dive in (and get lost, maybe? 😜) through clickable links on each page that lead you deeper and deeper into the world of mathematics.
 
