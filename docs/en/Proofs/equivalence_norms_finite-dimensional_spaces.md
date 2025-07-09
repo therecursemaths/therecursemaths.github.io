@@ -46,13 +46,13 @@ S_1 = \{ x \in E \mid N_0(x) = 1 \}
 is compact (because it is closed and bounded), we have:
 
 \[
-\exists x_0 \in S_1 \text{ such that } \forall x \in S_1, \ N(x_0) \leq N(x)
+\exists x_0 \in S_1 \text{ such that } \forall x \in S_1, \ \phi(x_0) \leq \phi(x) \ \ ie \ N(x_0) \leq N(x)
 \]
 
 Then, for all \(x \in E\), with \(x \ne 0_E\), we get:
 
 \[
-N(x) = N\left(\frac{x N_0(x)}{N_0(x)}\right) = N_0(x) \cdot N\left(\frac{x}{N_0(x)}\right) \geq N_0(x) \underbrace{N(x_0)}_{= \ b}
+N(x) = N(\frac{xN_0(x)}{N_0(x)}) = N_0(x)N(\underbrace{\frac{x}{N_0(x)}}_{\in S_1}) \geq N_0(x)\underbrace{N(x_0)}_{= \ b}
 \]
 
 Therefore:

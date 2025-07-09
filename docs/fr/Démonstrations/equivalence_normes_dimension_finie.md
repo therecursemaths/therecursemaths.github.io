@@ -36,13 +36,13 @@ Ainsi \( \phi \) est a-lipschitzienne donc continue
 Comme \( S_1 = \{ x \in E \ / \ N_0(x) = 1\} \) est compact (car fermé et borné) alors: 
 
 \[
-    \exists x_0 \in S_1 \ / \ \forall x \in S_1, \ N_0(x_0) \leq N_0(x)
+    \exists x_0 \in S_1 \ / \ \forall x \in S_1, \ \phi(x_0) \leq \phi(x) \ \ ie \ \  N(x_0) \leq N(x)
 \]
 
 Ainsi 
 
 \[
-    \forall x \in E, \ x \ne \{0_E\}, N(x) = N(\frac{xN_0(x)}{N_0(x)}) = N_0(x)N(\underbrace{\frac{x}{N_0(x)}}_{\in S_1}) \geq N_0(x)\underbrace{N(x_0)}_{= \ b}
+    \forall x \in E, \ x \ne 0_E, N(x) = N(\frac{xN_0(x)}{N_0(x)}) = N_0(x)N(\underbrace{\frac{x}{N_0(x)}}_{\in S_1}) \geq N_0(x)\underbrace{N(x_0)}_{= \ b}
 \]
 
 Puis il vient
