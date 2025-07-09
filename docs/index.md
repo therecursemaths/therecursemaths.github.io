@@ -21,7 +21,7 @@ This site was born from the passion of someone eager to share their knowledge ab
 
 ### 🌐 Website Preview
 
-🔗 [GitHub TheRecurseMaths](https://github.com/therecursemaths/therecursemaths.github.io)
+🔗 [GitHub The Recurse Maths](https://github.com/therecursemaths/therecursemaths.github.io)
 
 🖼️ *![Alt text](img/TheRecurseMaths.png "index.md")*
 
@@ -154,7 +154,7 @@ For any questions, suggestions, or contributions, feel free to reach out at:
 
 ### 📘 Introduction
 
-**TheRecurseMaths** est un site sur lequel vous pourrez explorer des démonstrations mathématiques complexes. Il est disponible en **français** 🇫🇷 et en **anglais** 🇬🇧. Les mainteneurs feront également de leur mieux pour que chaque contribution soit disponible dans les deux langues (voir section [🧑‍💻 Contribuer](#contribuer)).
+**The Recurse Maths** est un site sur lequel vous pourrez explorer des démonstrations mathématiques complexes. Il est disponible en **français** 🇫🇷 et en **anglais** 🇬🇧. Les mainteneurs feront également de leur mieux pour que chaque contribution soit disponible dans les deux langues (voir section [🧑‍💻 Contribuer](#contribuer)).
 
 Le principe est simple : plongez (et perdez-vous peut-être ? 😜) à travers des liens cliquables sur chaque page, qui vous mèneront toujours plus profondément dans l'univers fascinant des mathématiques.
 
@@ -164,7 +164,7 @@ Ce site est né de la volonté d'un passionné de partager ses connaissances sur
 
 ### 🌐 Aperçu du site
 
-🔗 [GitHub TheRecurseMaths](https://github.com/therecursemaths/therecursemaths.github.io)
+🔗 [GitHub The Recurse Maths](https://github.com/therecursemaths/therecursemaths.github.io)
 
 🖼️ *![Alt text](img/TheRecurseMaths.png "index.md")*
 
